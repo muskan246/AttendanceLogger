@@ -1,0 +1,51 @@
+<div>
+    <mat-toolbar color="primary">
+        <span class="title-center">Attendance Logger System
+      </span>
+    </mat-toolbar>
+
+
+    <div class="pie-chart">
+        <google-chart #chart [title]="title" [type]="type" [data]="data" [columnNames]="columnNames" [options]="options">
+        </google-chart>
+    </div>
+    <div class="record-table">
+        <mat-table #table [dataSource]="dataSource" class="mat-elevation-z8">
+            <ng-container matColumnDef="employeeStatus">
+                <th mat-header-cell *matHeaderCellDef> Status </th>
+                <td mat-cell *matCellDef="let element"> {{element.employeeStatus}} </td>
+                <td></td>
+                <td></td>
+            </ng-container>
+
+            <!-- Name Column -->
+            <ng-container matColumnDef="count">
+                <th mat-header-cell *matHeaderCellDef>Count </th>
+                <td mat-cell *matCellDef="let element"> {{element.count}} </td>
+            </ng-container>
+
+            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+        </mat-table>
+    </div>
+    <div class="card-class">
+        <div style=" float: left;width:15%;margin-left: 10%">
+            <mat-card>
+                <h2>47</h2>
+                <h3>Total Present</h3>
+            </mat-card>
+        </div>
+        <div style=" float: left;width: 15%;margin: 0px 15px 0px 40px ">
+            <mat-card>
+                <h2>4</h2>
+                <h3>Total Absent</h3>
+            </mat-card>
+        </div>
+        <div style=" float: left;width: 15%;margin: 0px 15px 0px 24px ">
+            <mat-card>
+                <h2>2</h2>
+                <h3>Total Half-Day</h3>
+            </mat-card>
+        </div>
+    </div>
+</div>

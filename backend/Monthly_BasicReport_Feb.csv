@@ -1,0 +1,54 @@
+No,EmployeeCode,EmployeeName,1,2,3,4,05Feb,06Feb,07Feb,08Feb,09Feb,10Feb,11Feb,12Feb,13Feb,14Feb,15Feb,16Feb,17Feb,18Feb,19Feb,20Feb,21Feb,22Feb,23Feb,24Feb,25Feb,26Feb,27Feb,28Feb
+1,1,Prabhakar Paliwal,P,WO,P,P,P,P,P,WO,WO,P,P,P,P,P,WO,WO,P,P,P,P,HO,WO,WO,P,P,HP,P,P
+2,3,Sadase Hanief,P,WO,P,P,P,P,P,WO,WO,P,P,P,P,P,WO,WO,P,HP,P,P,HO,WO,WO,P,P,P,P,P
+3,4,Imtiaz Hussain,P,WO,P,P,P,P,P,WO,WO,P,P,P,P,P,WO,WO,P,P,P,P,HO,WO,WO,P,HP,P,P,P
+4,5,Chhavi Jajoo,P,WO,P,P,P,P,P,WO,WO,P,P,P,P,P,WO,WO,P,P,P,P,HO,WO,WO,P,P,P,P,P
+5,6,Sagar Rana,P,WO,P,P,P,P,P,WO,WO,P,P,P,P,P,WO,WO,P,HP,P,P,HO,WO,WO,P,P,P,P,P
+6,7,Kulbir Singh,P,WO,P,P,P,P,P,WO,WO,P,P,P,P,P,WO,WO,P,P,P,P,HO,WO,WO,P,P,HP,P,P
+7,8,Pappu Ram Kumawat,HP,WO,P,P,P,P,P,WO,WO,P,HP,P,P,P,WO,WO,A,A,A,A,HO,WO,WO,A,A,A,A,A
+8,9,Himanshu Ganglani,A,WO,P,P,P,P,P,WO,WO,P,P,P,P,P,WO,WO,P,P,P,P,HO,WO,WO,A,A,HP,P,P
+9,10,Anchal Mehta,P,WO,P,P,P,P,P,WO,WO,P,P,P,P,P,WO,WO,P,P,P,P,HO,WO,WO,P,P,P,P,P
+10,11,Anushri Agarwal,P,WO,P,P,P,P,P,WO,WO,P,P,P,P,A,WO,WO,A,A,P,P,HO,WO,WO,P,P,HP,P,P
+11,12,Shikha Kumari,A,WO,P,P,P,P,P,WO,WO,P,P,P,P,P,WO,WO,P,P,P,P,HO,WO,WO,P,P,HP,P,P
+12,13,Vipin Kumar Sati,P,WO,P,P,P,P,P,WO,WO,P,P,P,P,P,WO,WO,P,P,P,P,HO,WO,WO,P,P,P,P,P
+13,14,Apurv Jain,P,WO,P,A,P,A,P,WO,WO,P,P,P,P,P,WO,WO,P,P,P,P,HO,WO,WO,P,P,HP,P,P
+14,15,Ravi Kumar Choudhary,P,WO,P,P,P,P,A,WO,WO,P,P,P,P,P,WO,WO,P,P,P,P,HO,WO,WO,P,P,P,P,P
+15,19,Silpa Jha,P,WO,P,P,P,P,P,WO,WO,P,P,P,P,P,WO,WO,P,P,P,P,HO,WO,WO,P,P,P,P,P
+16,21,Rohit Soni,P,WO,P,P,P,P,P,WO,WO,P,P,P,P,P,WO,WO,P,P,P,P,HO,WO,WO,A,P,P,P,P
+17,23,Abhimanyu Mathur,P,WO,P,P,P,P,P,WO,WO,P,P,P,P,P,WO,WO,P,P,P,P,HO,WO,WO,P,P,A,A,A
+18,24,Harshit Chourasiya,P,WO,P,P,P,P,HP,WO,WO,P,P,P,P,P,WO,WO,P,P,P,P,HO,WO,WO,P,P,P,P,P
+19,25,Shivam Kumar,P,WO,P,P,P,P,P,WO,WO,A,P,P,P,P,WO,WO,HP,P,P,A,HO,WO,WO,HP,P,HP,P,HP
+20,27,Anjali Garg,P,WO,P,P,P,P,A,WO,WO,P,P,P,P,P,WO,WO,P,P,P,P,HO,WO,WO,P,P,HP,P,P
+21,31,Shashank Gehlot,P,WO,P,P,P,P,P,WO,WO,P,P,P,P,P,WO,WO,P,P,P,P,HO,WO,WO,P,P,P,P,P
+22,32,Shubham Pansari,P,WO,P,P,P,P,P,WO,WO,P,P,P,HP,HP,WO,WO,P,P,P,P,HO,WO,WO,P,P,P,P,P
+23,33,Shashank Verma,P,WO,P,P,P,P,P,WO,WO,A,P,A,A,P,WO,WO,P,P,P,P,HO,WO,WO,P,P,P,A,A
+24,34,Shashank Garg,P,WO,P,P,P,P,P,WO,WO,P,P,P,P,P,WO,WO,HP,P,P,P,HO,WO,WO,P,P,HP,P,P
+25,35,Nikita Gupta,P,WO,P,P,P,P,P,WO,WO,P,P,P,P,P,WO,WO,A,P,P,P,HO,WO,WO,P,P,P,P,P
+26,36,Radhika Goyal,P,WO,P,P,P,P,P,WO,WO,P,P,P,P,P,WO,WO,P,P,P,P,HO,WO,WO,P,P,HP,A,HP
+27,37,Juhi Kriplani,HP,WO,A,P,P,P,P,WO,WO,P,P,P,P,P,WO,WO,A,P,P,P,HO,WO,WO,P,P,P,P,P
+28,38,Muskan Goyal,P,WO,P,P,P,P,P,WO,WO,A,A,A,P,P,WO,WO,A,A,P,P,HO,WO,WO,P,P,P,P,P
+29,39,Akshat Mathur,P,WO,A,A,P,P,P,WO,WO,A,P,P,P,P,WO,WO,P,P,P,P,HO,WO,WO,P,P,P,P,P
+30,40,Mohd. Haris,P,WO,P,P,HP,A,A,WO,WO,P,P,P,P,P,WO,WO,P,P,P,P,HO,WO,WO,A,P,P,P,P
+31,41,Harshal Paliwal,P,WO,P,P,P,P,P,WO,WO,P,P,P,P,P,WO,WO,P,P,P,P,HO,WO,WO,P,P,P,P,P
+32,42,Kirti Khandelwal,P,WO,P,P,P,HP,P,WO,WO,P,P,P,P,P,WO,WO,P,P,P,P,HO,WO,WO,P,P,P,P,P
+33,43,Mohit Khemchandani,P,WO,P,P,P,P,P,WO,WO,P,A,P,P,P,WO,WO,P,P,P,P,HO,WO,WO,A,A,P,P,P
+34,44,Anjali Poddar,P,WO,HP,A,P,P,P,WO,WO,P,P,P,A,A,WO,WO,P,P,P,P,HO,WO,WO,P,P,P,P,P
+35,45,Dipanshu Bisht,P,WO,P,P,P,P,A,WO,WO,P,P,P,P,P,WO,WO,P,P,P,P,HO,WO,WO,P,P,P,P,P
+36,46,Daulat Singh,P,WO,P,HP,P,P,P,WO,WO,HP,A,A,A,A,WO,WO,P,P,P,P,HO,WO,WO,P,P,A,A,P
+37,47,Priyanshu Sharma,P,WO,P,P,P,P,P,WO,WO,P,P,P,P,P,WO,WO,P,P,P,P,HO,WO,WO,P,P,P,P,P
+38,48,Rohsan Kumawat,P,WO,P,P,P,P,P,WO,WO,P,P,P,P,P,WO,WO,P,P,P,P,HO,WO,WO,P,P,P,P,P
+39,49,Tushar Sharma,P,WO,P,P,P,P,P,WO,WO,P,P,P,P,P,WO,WO,P,P,P,P,HO,WO,WO,P,P,HP,P,P
+40,50,Astha Rai,P,WO,P,P,P,P,P,WO,WO,P,P,P,P,P,WO,WO,P,P,P,P,HO,WO,WO,P,P,P,P,P
+41,51,Divya Sharma,P,WO,P,P,P,P,P,WO,WO,P,P,P,P,P,WO,WO,P,P,P,P,HO,WO,WO,P,P,P,P,P
+42,52,Devansh Aggarwal,P,WO,HP,P,P,P,P,WO,WO,A,P,P,P,P,WO,WO,P,P,P,P,HO,WO,WO,P,P,HP,P,P
+43,53,Suraj Kumar,P,WO,P,P,P,P,P,WO,WO,P,P,P,P,P,WO,WO,P,P,P,P,HO,WO,WO,P,P,P,P,P
+44,54,Hitanshu Gupta,P,WO,P,P,P,P,P,WO,WO,P,P,P,P,P,WO,WO,P,P,P,P,HO,WO,WO,P,P,P,A,A
+45,55,Arum Mahur,P,WO,P,P,P,P,P,WO,WO,P,P,P,P,P,WO,WO,P,P,P,P,HO,WO,WO,P,P,P,P,P
+46,56,Shubham Tak,P,WO,P,P,P,P,P,WO,WO,P,P,A,A,A,WO,WO,P,P,P,P,HO,WO,WO,P,P,P,P,P
+47,57,Abhishek Khandelwal,P,WO,P,P,P,P,P,WO,WO,A,P,P,A,A,WO,WO,P,P,P,P,HO,WO,WO,P,P,P,P,P
+48,58,Harsh Rawat,P,WO,P,P,P,P,P,WO,WO,P,P,P,A,A,WO,WO,P,P,P,P,HO,WO,WO,P,P,P,P,P
+49,59,Simarn Ahuja,P,WO,P,P,P,P,P,WO,WO,P,P,P,P,P,WO,WO,P,P,P,P,HO,WO,WO,P,A,A,P,P
+50,60,Noopur Rathore,P,WO,P,P,P,P,P,WO,WO,P,P,A,A,A,WO,WO,P,P,P,P,HO,WO,WO,P,P,P,P,P
+51,61,Dixita Mathur,P,WO,P,P,P,P,P,WO,WO,P,P,P,P,P,WO,WO,P,P,P,P,HO,WO,WO,P,P,P,P,P
+52,62,Surya Teja,P,WO,P,P,P,P,P,WO,WO,A,P,P,P,HP,WO,WO,P,P,P,P,HO,WO,WO,P,P,A,A,P
+53,63,Harsh Kasodariya,P,WO,P,P,P,P,P,WO,WO,P,P,P,P,P,WO,WO,P,P,P,P,HO,WO,WO,P,P,A,P,P
