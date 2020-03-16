@@ -4,6 +4,7 @@
 
 .pie-chart {
     float: left;
+    padding-top: 2%;
 }
 
 .record-table {
@@ -12,6 +13,18 @@
     padding-left: 1%;
 }
 
+.record-table .mat-header-cell {
+    font-size: 15px;
+    padding-top: 18px;
+    font-weight: bold;
+}
+
+.record-table .mat-cell {
+    font-size: 15px;
+    padding-top: 13px;
+    text-align: center;
+}
+
 .card-class {
-    margin-top: 35%;
+    margin-top: 23%;
 }

@@ -20,8 +20,8 @@
 
             <!-- Name Column -->
             <ng-container matColumnDef="count">
-                <th mat-header-cell *matHeaderCellDef>Count </th>
-                <td mat-cell *matCellDef="let element"> {{element.count}} </td>
+                <th style="padding-left: 14px;" mat-header-cell *matHeaderCellDef>Count </th>
+                <td style="padding-left: 14px;" mat-cell *matCellDef="let element"> {{element.count}} </td>
             </ng-container>
 
             <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
@@ -29,21 +29,21 @@
         </mat-table>
     </div>
     <div class="card-class">
-        <div style=" float: left;width:15%;margin-left: 10%">
+        <div style=" float: left;width:12%;margin-left: 3% ;text-align: center;">
             <mat-card>
-                <h2>47</h2>
+                <h2><b>47</b></h2>
                 <h3>Total Present</h3>
             </mat-card>
         </div>
-        <div style=" float: left;width: 15%;margin: 0px 15px 0px 40px ">
+        <div style=" float: left;width: 12%;margin: 0px 15px 0px 40px;text-align: center;">
             <mat-card>
-                <h2>4</h2>
+                <h2><b>4</b></h2>
                 <h3>Total Absent</h3>
             </mat-card>
         </div>
-        <div style=" float: left;width: 15%;margin: 0px 15px 0px 24px ">
+        <div style=" float: left;width: 12%;margin: 0px 15px 0px 24px ;text-align: center;">
             <mat-card>
-                <h2>2</h2>
+                <h2><b>2</b></h2>
                 <h3>Total Half-Day</h3>
             </mat-card>
         </div>
