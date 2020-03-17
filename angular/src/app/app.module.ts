@@ -9,10 +9,26 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatTableModule } from '@angular/material/table';
 import { GoogleChartsModule } from 'angular-google-charts';
 import {MatCardModule} from '@angular/material/card';
+import { ChartComponent } from './chart/chart.component';
+import { DateFilterComponent } from './date-filter/date-filter.component';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatIconModule} from '@angular/material/icon';
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import {MatNativeDateModule} from '@angular/material/core';
+import {MatInputModule} from '@angular/material/input';
+import {MAT_FORM_FIELD_DEFAULT_OPTIONS} from '@angular/material/form-field';
+// import {
+//   MatDatepickerModule,
+//   MatNativeDateModule,
+//   MatInputModule
+// } from '@angular/material';
+
 @NgModule({
   declarations: [
     AppComponent,
     PieComponent,
+    ChartComponent,
+    DateFilterComponent,
   ],
   imports: [
     BrowserModule,
@@ -22,7 +38,18 @@ import {MatCardModule} from '@angular/material/card';
     MatTableModule,
     GoogleChartsModule,
     MatCardModule,
-
+    MatFormFieldModule,
+    MatIconModule,
+    MatDatepickerModule,
+    MatNativeDateModule,
+    MatInputModule
+  ],
+  exports: [
+    MatFormFieldModule,
+    MatIconModule,
+    MatDatepickerModule,
+    MatNativeDateModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]
