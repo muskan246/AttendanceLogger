@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -16,7 +17,8 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import {MatNativeDateModule} from '@angular/material/core';
 import {MatInputModule} from '@angular/material/input';
-import {MAT_FORM_FIELD_DEFAULT_OPTIONS} from '@angular/material/form-field';
+import { SearchBarComponent } from './search-bar/search-bar.component';
+import {MatAutocompleteModule} from '@angular/material/autocomplete';
 // import {
 //   MatDatepickerModule,
 //   MatNativeDateModule,
@@ -29,6 +31,7 @@ import {MAT_FORM_FIELD_DEFAULT_OPTIONS} from '@angular/material/form-field';
     PieComponent,
     ChartComponent,
     DateFilterComponent,
+    SearchBarComponent
   ],
   imports: [
     BrowserModule,
@@ -42,7 +45,9 @@ import {MAT_FORM_FIELD_DEFAULT_OPTIONS} from '@angular/material/form-field';
     MatIconModule,
     MatDatepickerModule,
     MatNativeDateModule,
-    MatInputModule
+    MatInputModule,
+    MatAutocompleteModule,
+    ReactiveFormsModule
   ],
   exports: [
     MatFormFieldModule,
