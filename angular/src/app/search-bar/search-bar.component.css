@@ -1,0 +1,13 @@
+.class-name {
+    display: inline-block;
+}
+
+.class-month {
+    display: inline;
+    margin-left: 6%;
+}
+
+.name-month {
+    padding-top: 2%;
+    margin-left: 3%;
+}

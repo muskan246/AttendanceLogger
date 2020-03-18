@@ -3,12 +3,12 @@ import * as CanvasJS from '../canvasjs.min';
 import { MatTableDataSource } from '@angular/material/table';
 import {MatSort} from '@angular/material/sort';
 import { DataSource } from '@angular/cdk/table';
-export interface PeriodicElement {
+export interface AttendanceElement {
   employeeStatus: string;
   count: number;
 }
 
-const ELEMENT_DATA: PeriodicElement[] = [
+const ATTENDANCE_DATA: AttendanceElement[] = [
   {employeeStatus: 'Present', count: 47},
   {employeeStatus: 'Absent', count: 4},
   {employeeStatus: 'Half-Day', count: 2},
@@ -22,7 +22,7 @@ const ELEMENT_DATA: PeriodicElement[] = [
 })
 export class PieComponent implements OnInit {
   displayedColumns: string[] = ['employeeStatus', 'count'];
-  dataSource = ELEMENT_DATA;
+  dataSource = ATTENDANCE_DATA;
 
   constructor() { }
 

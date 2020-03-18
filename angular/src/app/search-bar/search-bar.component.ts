@@ -13,14 +13,47 @@ export const _filter = (opt: string[], value: string): string[] => {
 
   return opt.filter(item => item.toLowerCase().indexOf(filterValue) === 0);
 };
+interface Month {
+  value: string;
+  viewValue: string;
+}
+export interface Table {
+  code: number;
+  name: string;
+  avgPunchIn: string;
+  avgPunchOut: string;
+  leavesTaken: number;
+  halfdayTaken: number;
+  PTORemaining: number;
+}
+const TABLE_DATA : Table[] = [
+  {code: 1, name: 'Prabhakar Paliwal', avgPunchIn: '9:35', avgPunchOut: '6:35', leavesTaken: 2, halfdayTaken: 2, PTORemaining: 19},
 
+];
 
 @Component({
   selector: 'app-search-bar',
   templateUrl: './search-bar.component.html',
   styleUrls: ['./search-bar.component.css']
 })
+
 export class SearchBarComponent implements OnInit {
+  months: Month[] = [
+    {value: '1', viewValue: 'January'},
+    {value: '2', viewValue: 'February'},
+    {value: '3', viewValue: 'March'},
+    {value: '4', viewValue: 'April'},
+    {value: '5', viewValue: 'May'},
+    {value: '6', viewValue: 'June'},
+    {value: '7', viewValue: 'July'},
+    {value: '8', viewValue: 'August'},
+    {value: '9', viewValue: 'September'},
+    {value: '10', viewValue: 'October'},
+    {value: '11', viewValue: 'November'},
+    {value: '12', viewValue: 'December'},
+  ];
+  displayedColumns: string[] = ['code', 'name', 'avgPunchIn', 'avgPunchOut', 'leavesTaken', 'halfdayTaken', 'PTORemaining'];
+  dataSource = TABLE_DATA;
 
   stateForm: FormGroup = this._formBuilder.group({
     stateGroup: '',
@@ -29,45 +62,8 @@ export class SearchBarComponent implements OnInit {
   stateGroups: StateGroup[] = [{
     letter: 'A',
     names: ['Alabama', 'Alaska', 'Arizona', 'Arkansas']
-  }, {
-    letter: 'C',
-    names: ['California', 'Colorado', 'Connecticut']
-  }, {
-    letter: 'D',
-    names: ['Delaware']
-  }, {
-    letter: 'F',
-    names: ['Florida']
-  }, {
-    letter: 'G',
-    names: ['Georgia']
-  }, {
-    letter: 'H',
-    names: ['Hawaii']
-  }, {
-    letter: 'I',
-    names: ['Idaho', 'Illinois', 'Indiana', 'Iowa']
-  }, {
-    letter: 'K',
-    names: ['Kansas', 'Kentucky']
-  }, {
-    letter: 'L',
-    names: ['Louisiana']
-  }, {
-    letter: 'M',
-    names: ['Maine', 'Maryland', 'Massachusetts', 'Michigan',
-      'Minnesota', 'Mississippi', 'Missouri', 'Montana']
-  }, {
-    letter: 'N',
-    names: ['Nebraska', 'Nevada', 'New Hampshire', 'New Jersey',
-      'New Mexico', 'New York', 'North Carolina', 'North Dakota']
-  }, {
-    letter: 'O',
-    names: ['Ohio', 'Oklahoma', 'Oregon']
-  }, {
-    letter: 'P',
-    names: ['Pennsylvania']
-  }, {
+  },
+  {
     letter: 'R',
     names: ['Rhode Island']
   }, {
@@ -76,15 +72,6 @@ export class SearchBarComponent implements OnInit {
   }, {
     letter: 'T',
     names: ['Tennessee', 'Texas']
-  }, {
-    letter: 'U',
-    names: ['Utah']
-  }, {
-    letter: 'V',
-    names: ['Vermont', 'Virginia']
-  }, {
-    letter: 'W',
-    names: ['Washington', 'West Virginia', 'Wisconsin', 'Wyoming']
   }];
 
   stateGroupOptions: Observable<StateGroup[]>;

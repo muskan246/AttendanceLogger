@@ -31,6 +31,6 @@ export class ChartComponent implements OnInit {
       },
    };
    width = 650;
-   height = 400;
+   height = 440;
 
 }
