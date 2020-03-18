@@ -11,7 +11,6 @@ import { MatTableModule } from '@angular/material/table';
 import { GoogleChartsModule } from 'angular-google-charts';
 import {MatCardModule} from '@angular/material/card';
 import { ChartComponent } from './chart/chart.component';
-import { DateFilterComponent } from './date-filter/date-filter.component';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatIconModule} from '@angular/material/icon';
 import {MatDatepickerModule} from '@angular/material/datepicker';
@@ -20,6 +19,8 @@ import {MatInputModule} from '@angular/material/input';
 import { SearchBarComponent } from './search-bar/search-bar.component';
 import {MatAutocompleteModule} from '@angular/material/autocomplete';
 import {MatSelectModule} from '@angular/material/select';
+import { FormsModule } from '@angular/forms';
+import {MatButtonModule} from '@angular/material/button';
 // import {
 //   MatDatepickerModule,
 //   MatNativeDateModule,
@@ -31,11 +32,11 @@ import {MatSelectModule} from '@angular/material/select';
     AppComponent,
     PieComponent,
     ChartComponent,
-    DateFilterComponent,
     SearchBarComponent
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatToolbarModule,
@@ -49,7 +50,8 @@ import {MatSelectModule} from '@angular/material/select';
     MatInputModule,
     MatAutocompleteModule,
     ReactiveFormsModule,
-    MatSelectModule
+    MatSelectModule,
+    MatButtonModule
   ],
   exports: [
     MatFormFieldModule,

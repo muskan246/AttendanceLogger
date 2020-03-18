@@ -55,8 +55,10 @@
 
 <div style="margin-left: 3%; width:40%">
     <mat-form-field>
-        <input matInput [matDatepicker]="picker1" placeholder="Date">
+        <input matInput [matDatepicker]="picker1" placeholder="Date" [(ngModel)]="startDate">
         <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
         <mat-datepicker #picker1></mat-datepicker>
     </mat-form-field>
+
+    <button style="margin-left: 3%;" mat-raised-button color="accent" (click)="searchFor()">Search</button>
 </div>

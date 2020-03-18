@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import * as CanvasJS from '../canvasjs.min';
 import { MatTableDataSource } from '@angular/material/table';
 import {MatSort} from '@angular/material/sort';
 import { DataSource } from '@angular/cdk/table';
@@ -21,12 +20,19 @@ const ATTENDANCE_DATA: AttendanceElement[] = [
   styleUrls: ['./pie.component.css']
 })
 export class PieComponent implements OnInit {
+  startDate: Date;
+
+  searchFor() {
+   console.log('Pie',this.startDate);
+   };
   displayedColumns: string[] = ['employeeStatus', 'count'];
   dataSource = ATTENDANCE_DATA;
 
   constructor() { }
 
+
   ngOnInit() {
+
 
 }
 title = 'Attendance Record of Today';

@@ -6,7 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./chart.component.css']
 })
 export class ChartComponent implements OnInit {
+  ToDate: Date;
+  FromDate: Date;
 
+  searchFor() {
+   console.log('Line',this.ToDate, this.FromDate);
+   };
   constructor() { }
 
   ngOnInit(): void {

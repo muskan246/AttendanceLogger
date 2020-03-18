@@ -3,21 +3,22 @@
     </google-chart>
 </div>
 
-<div style=" margin-left: 58%; margin-top: -6%;">
+<div style=" margin-left: 55%; margin-top: -6% ;">
     <p style="display: inline;">Choose Duration</p>
 </div>
 
-<div style="margin-left: 58%; display:inline;">
+<div style="margin-left: 55%; display:inline;">
     <mat-form-field>
-        <input matInput [matDatepicker]="picker2" placeholder="Date">
+        <input matInput [matDatepicker]="picker2" placeholder="To" [(ngModel)]="ToDate">
         <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
         <mat-datepicker #picker2></mat-datepicker>
     </mat-form-field>
 </div>
-<div style="margin-left: 3%; display: inline;">
+<div style="margin-left: 1%; display: inline;">
     <mat-form-field>
-        <input matInput [matDatepicker]="picker3" placeholder="Date">
+        <input matInput [matDatepicker]="picker3" placeholder="From" [(ngModel)]="FromDate">
         <mat-datepicker-toggle matSuffix [for]="picker3"></mat-datepicker-toggle>
         <mat-datepicker #picker3></mat-datepicker>
     </mat-form-field>
 </div>
+<button style="margin-left: 1%;" mat-raised-button color="accent" (click)="searchFor()">Apply</button>
