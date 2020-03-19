@@ -11,3 +11,24 @@
     padding-top: 2%;
     margin-left: 3%;
 }
+
+.record-table {
+    width: 100%;
+    padding-top: 4%;
+}
+
+.record-table .mat-header-cell {
+    font-size: 15px;
+    padding-top: 18px;
+    font-weight: bold;
+    text-align: left;
+    padding: 17px 10px 0px 38px;
+}
+
+.record-table .mat-cell {
+    font-size: 15px;
+    padding-top: 13px;
+    text-align: left;
+    padding: 17px 10px 0px 38px;
+    text-align: center;
+}

@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {FormBuilder, FormGroup} from '@angular/forms';
 import {Observable} from 'rxjs';
 import {startWith, map} from 'rxjs/operators';
+import { SharedService } from '../shared.service';
 
 export interface StateGroup {
   letter: string;
@@ -76,9 +77,15 @@ export class SearchBarComponent implements OnInit {
 
   stateGroupOptions: Observable<StateGroup[]>;
 
-  constructor(private _formBuilder: FormBuilder) {}
+  constructor(private _formBuilder: FormBuilder,public service: SharedService) {}
 
   ngOnInit() {
+    console.log('mmm')
+    this.service.getEmpName().subscribe((response) => {
+      console.log('emppp',response)
+    }, (error) => {
+      console.log('Error is :', error);
+    })
     this.stateGroupOptions = this.stateForm.get('stateGroup')!.valueChanges
       .pipe(
         startWith(''),

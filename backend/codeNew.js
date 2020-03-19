@@ -35,7 +35,7 @@ for (k = 0; k < emp.length; k++) {
             }
         }
     }
-    var object = { 'Year2020': [{ 'February': {} }] }
+    var object = { 'Year2020': [{ 'January': {} }, { 'February': {} }] }
     object.Year2020[0].February = anotherData1;
     newObject = JSON.stringify(object)
     var sql = `INSERT INTO new_attendance(No,Code,Name,Value) VALUES (${no}, ${code},'${name}', '${newObject}')`;

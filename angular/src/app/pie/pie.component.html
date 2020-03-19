@@ -6,7 +6,7 @@
 
 
     <div class="pie-chart">
-        <google-chart #chart [title]="title" [type]="type" [data]="data" [columnNames]="columnNames" [options]="options">
+        <google-chart #chart [title]="title" [type]="type" [data]="[['Present',presentCount],['Absent',absentCount], ['Half-Day', halfdayCount], ['Weekly-Off', weekOffCount]]" [options]="options">
         </google-chart>
     </div>
     <div class="record-table">
@@ -31,19 +31,19 @@
     <div class="card-class">
         <div style=" float: left;width:12%;margin-left: 3% ;text-align: center;">
             <mat-card>
-                <h2><b>47</b></h2>
+                <h2><b>{{presentCount}}</b></h2>
                 <h3>Total Present</h3>
             </mat-card>
         </div>
         <div style=" float: left;width: 12%;margin: 0px 15px 0px 40px;text-align: center;">
             <mat-card>
-                <h2><b>4</b></h2>
+                <h2><b>{{absentCount}}</b></h2>
                 <h3>Total Absent</h3>
             </mat-card>
         </div>
         <div style=" float: left;width: 12%;margin: 0px 15px 0px 24px ;text-align: center;">
             <mat-card>
-                <h2><b>2</b></h2>
+                <h2><b>{{halfdayCount}}</b></h2>
                 <h3>Total Half-Day</h3>
             </mat-card>
         </div>

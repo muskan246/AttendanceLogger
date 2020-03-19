@@ -4,7 +4,6 @@
         <form [formGroup]="stateForm">
             <mat-form-field>
                 <input type="text" matInput placeholder="Provide Name" formControlName="stateGroup" [matAutocomplete]="autoGroup">
-                <!-- <img class="SearchBar" src="../../assets/Search_bar_25_icon.png"> -->
                 <mat-icon style="color: grey; position: absolute;">search</mat-icon>
 
                 <mat-autocomplete #autoGroup="matAutocomplete">
@@ -30,7 +29,7 @@
 </div>
 
 
-<div>
+<div class="record-table">
     <mat-table #table [dataSource]="dataSource" class="mat-elevation-z8">
 
         <ng-container matColumnDef="code">
@@ -39,7 +38,7 @@
         </ng-container>
 
         <ng-container matColumnDef="name">
-            <th mat-header-cell *matHeaderCellDef>Name </th>
+            <th mat-header-cell *matHeaderCellDef>Employee Name </th>
             <td mat-cell *matCellDef="let element"> {{element.name}} </td>
         </ng-container>
 
@@ -60,7 +59,7 @@
 
         <ng-container matColumnDef="halfdayTaken">
             <th mat-header-cell *matHeaderCellDef>Total Half-Day Taken </th>
-            <td mat-cell *matCellDef="let element"> {{element.halfDayTaken}} </td>
+            <td mat-cell *matCellDef="let element"> {{element.halfdayTaken}} </td>
         </ng-container>
 
         <ng-container matColumnDef="PTORemaining">
