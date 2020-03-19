@@ -58,6 +58,7 @@ app.post('/getpiedata', function(req, res) {
                 sqlData = JSON.parse(result[k].VALUE)
                     //console.log(sqlData)
                 x = month[monthFromFrontend]
+                    // x = February
 
                 console.log(sqlData['Year2020'][monthFromFrontend][x][dateFromFrontend - 1][dateFromFrontend]['Status'])
                 if (sqlData['Year2020'][monthFromFrontend][x][dateFromFrontend - 1][dateFromFrontend]['Status'] === 'P') {
