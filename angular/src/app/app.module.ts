@@ -22,7 +22,7 @@ import {MatSelectModule} from '@angular/material/select';
 import { FormsModule } from '@angular/forms';
 import {MatButtonModule} from '@angular/material/button';
 import { HttpClientModule } from '@angular/common/http';
-
+import { NgxMatSelectSearchModule } from 'ngx-mat-select-search';
 // import {
 //   MatDatepickerModule,
 //   MatNativeDateModule,
@@ -54,7 +54,9 @@ import { HttpClientModule } from '@angular/common/http';
     ReactiveFormsModule,
     MatSelectModule,
     MatButtonModule,
-    HttpClientModule
+    HttpClientModule,
+    MatSelectModule,
+    NgxMatSelectSearchModule
   ],
   exports: [
     MatFormFieldModule,

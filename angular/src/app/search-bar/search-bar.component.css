@@ -4,7 +4,7 @@
 
 .class-month {
     display: inline;
-    margin-left: 6%;
+    margin-left: 3%;
 }
 
 .name-month {
@@ -30,5 +30,5 @@
     padding-top: 13px;
     text-align: left;
     padding: 17px 10px 0px 38px;
-    text-align: center;
+    /* text-align: center; */
 }
