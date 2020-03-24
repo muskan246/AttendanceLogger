@@ -14,6 +14,10 @@ export class SharedService {
     return this.http.post('http://127.0.0.1:3000/getpiedata', {'Date': date,'Month': month,'Year': year});
 
   }
+   getLineChartData(date1, month1, year1, date2, month2, year2) {
+    console.log('service', date1, month1, year1, date2, month2, year2);
+    return this.http.post('http://127.0.0.1:3000/getlinechartdata', {'Date1': date1,'Month1': month1,'Year1': year1, 'Date2': date2, 'Month2': month2, 'Year2': year2 });
+   }
 
   getEmpName() {
     console.log('service of getEmpData');
