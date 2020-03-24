@@ -6,9 +6,11 @@ const bodyparser = require('body-parser');
 var cors = require('cors')
 var date = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31'];
 var emp = ['Prabhakar Paliwal', 'Sadase Hanief', 'Imtiaz Hussain', 'Chhavi Jajoo', 'Sagar Rana', 'Kulbir Singh', 'Pappu Ram Kumawat', 'Himanshu Ganglani', 'Anchal Mehta', 'Anushri Agarwal', 'Shikha Kumari', 'Vipin Kumar Sati', 'Apurv Jain', 'Ravi Kumar Choudhary', 'Silpa Jha', 'Rohit Soni', 'Abhimanyu Mathur', 'Harshit Chourasiya', 'Shivam Kumar', 'Anjali Garg', 'Shashank Gehlot', 'Shubham Pansari', 'Shashank Verma', 'Shashank Garg', 'Nikita Gupta', 'Radhika Goyal', 'Juhi Kriplani', 'Muskan Goyal', 'Akshat Mathur', 'Mohd. Haris', 'Harshal Paliwal', 'Kirti Khandelwal', 'Mohit Khemchandani', 'Anjali Poddar', 'Dipanshu Bisht', 'Daulat Singh', 'Priyanshu Sharma', 'Rohsan Kumawat', 'Tushar Sharma', 'Astha Rai', 'Divya Sharma', 'Devansh Aggarwal', 'Suraj Kumar', 'Hitanshu Gupta', 'Arum Mahur', 'Shubham Tak', 'Abhishek Khandelwal', 'Harsh Rawat', 'Simarn Ahuja', 'Noopur Rathore', 'Dixita Mathur', 'Surya Teja', 'Harsh Kasodariya']
-var month = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', ' September', 'October', 'November', 'December']
+var month = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', ' September', 'October', 'November', 'December'];
 var absent = 0;
 var halfDay = 0;
+var fs=require("fs");
+var _ = require('lodash')
 app.use(cors())
 app.use(bodyparser.json());
 app.use(bodyparser.urlencoded({
@@ -17,7 +19,7 @@ app.use(bodyparser.urlencoded({
 var mysqlConnection = mysql.createConnection({
     host: 'localhost',
     user: 'root',
-    password: 'Root@123',
+    password: 'Success$132',
     database: 'mydata',
     multipleStatements: true,
 });
@@ -94,7 +96,88 @@ app.post('/getpiedata', function(req, res) {
 
     }
 })
+app.post('/getlinechartdata', function(req, res) {
+    dd1 = req.body.Date1;
+    mm1 = req.body.Month1;
+    yyyy1 = req.body.Year1;
+    dd2 = req.body.Date2;
+    mm2 = req.body.Month2;
+    yyyy2 = req.body.Year2;
+    var totPresent = 0;
+    var totAbsent = 0;
+    var totHalfDay = 0;
+    var monthInString;
+    var yearString = "Year2020";
+    monthInString = month[mm1 - 1];
+    var finalArr1 = [];
+    if (yyyy1 == 2020 && (mm1 == 0 || mm1 == 1 || mm1 == 2)) {
+        var sqlPieDate = `SELECT VALUE FROM new_attendance`;
+        mysqlConnection.query(sqlPieDate, function(err, result) {
+            if (!err) {
+                for (k = 0; k < emp.length; k++) {
+                    var tempData1 = JSON.parse(result[k].VALUE);
+                    var yearData = tempData1[yearString];
+                    var monthData = yearData[mm1 - 1][monthInString];
+                    for (var i = 0; i < monthData.length; i++) {
+                        totPresent = 0;
+                        totAbsent = 0;
+                        totHalfDay = 0;
+                        var tempRes = monthData[i];
+                        for (var j = dd1; j <= dd2; j++) {
+                            var tempObj = {};
+                            var status = tempRes[j];
+                            var tempStatus;
+                            if (!status || status == undefined || status == 'undefined' || status == null || status == 'null') {
+                                // Do Nothing
+                            }
+                            else {
+                                if (status.Status == 'P') {
+                                    totPresent += 1;
+                                    tempStatus = 'P';
+                                }
+                                else if (status.Status == 'A') {
+                                    tempStatus = 'A';
+                                    totAbsent += 1;
+                                }
+                                else if (status.Status == 'HP') {
+                                    tempStatus = 'HP';
+                                    totHalfDay += 1;
+                                }
+                                else {
+        
+                                }
+                                tempObj.dd = j;
+                                tempObj.status = tempStatus;
+                                tempStatus = 'NA';
+                                finalArr1.push(tempObj);
+                                tempObj = {};
+                            }
+                        }
+                    }
+                }
+                var tempArr = [];
+                for (var j = dd1; j <= dd2; j++) {
+                    var tempArr10=[];
+                    tempArr10.push(j+"/"+ mm1+"/"+ yyyy1);
+                    var allPresent = (_.filter(finalArr1, { 'dd': j, 'status': "P" })).length;
+                    tempArr10.push(allPresent);
+                    var allAbsent = (_.filter(finalArr1, { 'dd': j, 'status': "A" })).length;
+                    tempArr10.push(allAbsent);
+                    var allHalfDay = (_.filter(finalArr1, { 'dd': j, 'status': "HP" })).length;
+                    tempArr10.push(allHalfDay);
+                    tempArr.push(tempArr10);
+                    tempArr10=[];
+                }
+                console.log("Exiting Loop");
+                res.json(tempArr);
+            }
+        });
+    } else {
+       // noRecord = 1;
+        //res.end(JSON.stringify({ 'present': present, 'absent': absent, 'halfday': halfDay, 'weeklyOff': wo, 'NoRecord': noRecord }))
 
+    }
+})
 
 app.get('/getempname', function(req, res) {
     mysqlConnection.query('SELECT NAME FROM new_attendance ORDER BY Name ASC', (err, results, fields) => {
@@ -108,6 +191,7 @@ app.get('/getempname', function(req, res) {
     })
 
 })
+
 
 app.get('/getempdetails', function(req, res) {
     finalData = []
