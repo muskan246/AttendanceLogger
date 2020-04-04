@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="91d0f5a5-9a4d-4bb9-9328-b4e62d29b6f3" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1ZXnk7Z9Viuy19LomBxAVU4hcOm" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="extract.method.default.visibility" value="private" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/io/robomq/ProjectAL" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/io/robomq/ProjectAL" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="io.robomq.ProjectAL.App" />
+      <module name="ProjectAL" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.robomq.ProjectAL.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.App" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="91d0f5a5-9a4d-4bb9-9328-b4e62d29b6f3" name="Default Changelist" comment="" />
+      <created>1584994446249</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1584994446249</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="653" y="187" key="#com.intellij.ide.util.MemberChooser" timestamp="1584999587784">
+      <screen x="0" y="23" width="1680" height="947" />
+    </state>
+    <state x="653" y="187" key="#com.intellij.ide.util.MemberChooser/0.23.1680.947@0.23.1680.947" timestamp="1584999587784" />
+    <state width="1638" height="253" key="GridCell.Tab.0.bottom" timestamp="1584999281996">
+      <screen x="0" y="23" width="1680" height="947" />
+    </state>
+    <state width="1638" height="253" key="GridCell.Tab.0.bottom/0.23.1680.947@0.23.1680.947" timestamp="1584999281996" />
+    <state width="1638" height="253" key="GridCell.Tab.0.center" timestamp="1584999281995">
+      <screen x="0" y="23" width="1680" height="947" />
+    </state>
+    <state width="1638" height="253" key="GridCell.Tab.0.center/0.23.1680.947@0.23.1680.947" timestamp="1584999281995" />
+    <state width="1638" height="253" key="GridCell.Tab.0.left" timestamp="1584999281995">
+      <screen x="0" y="23" width="1680" height="947" />
+    </state>
+    <state width="1638" height="253" key="GridCell.Tab.0.left/0.23.1680.947@0.23.1680.947" timestamp="1584999281995" />
+    <state width="1638" height="253" key="GridCell.Tab.0.right" timestamp="1584999281996">
+      <screen x="0" y="23" width="1680" height="947" />
+    </state>
+    <state width="1638" height="253" key="GridCell.Tab.0.right/0.23.1680.947@0.23.1680.947" timestamp="1584999281996" />
+    <state width="1638" height="313" key="GridCell.Tab.1.bottom" timestamp="1584998983910">
+      <screen x="0" y="23" width="1680" height="947" />
+    </state>
+    <state width="1638" height="313" key="GridCell.Tab.1.bottom/0.23.1680.947@0.23.1680.947" timestamp="1584998983910" />
+    <state width="1638" height="313" key="GridCell.Tab.1.center" timestamp="1584998983909">
+      <screen x="0" y="23" width="1680" height="947" />
+    </state>
+    <state width="1638" height="313" key="GridCell.Tab.1.center/0.23.1680.947@0.23.1680.947" timestamp="1584998983909" />
+    <state width="1638" height="313" key="GridCell.Tab.1.left" timestamp="1584998983908">
+      <screen x="0" y="23" width="1680" height="947" />
+    </state>
+    <state width="1638" height="313" key="GridCell.Tab.1.left/0.23.1680.947@0.23.1680.947" timestamp="1584998983908" />
+    <state width="1638" height="313" key="GridCell.Tab.1.right" timestamp="1584998983910">
+      <screen x="0" y="23" width="1680" height="947" />
+    </state>
+    <state width="1638" height="313" key="GridCell.Tab.1.right/0.23.1680.947@0.23.1680.947" timestamp="1584998983910" />
+    <state x="578" y="256" key="extract.method.dialog" timestamp="1584995879811">
+      <screen x="0" y="23" width="1680" height="947" />
+    </state>
+    <state x="578" y="256" key="extract.method.dialog/0.23.1680.947@0.23.1680.947" timestamp="1584995879811" />
+  </component>
+</project>
