@@ -19,10 +19,16 @@
 
 .record-table .mat-header-cell {
     font-size: 15px;
-    padding-top: 18px;
+    /* padding-top: 18px; */
     font-weight: bold;
     text-align: left;
-    padding: 17px 10px 0px 38px;
+    padding: 14px 16px 0px 38px;
+    background: #3f51b5;
+    color: white;
+}
+
+tr.mat-header-row {
+    height: 45px;
 }
 
 .record-table .mat-cell {
